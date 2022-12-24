@@ -27,7 +27,7 @@ app.use(bodyparser.urlencoded({
 //Database
 mongoose.set('strictQuery', true);
 // connecting with database
-mongoose.connect("mongodb://127.0.0.1:27017/todolistDB");
+mongoose.connect("mongodb+srv://admin-mrcrud:Manolo1010@cluster0.6kc3gdk.mongodb.net/todolistDB");
 
 //Schema
 
@@ -75,7 +75,7 @@ app.get("/", function(req, res) {
       });
     } else {
       res.render("list", {
-        listTitle: day,
+        listTitle: "Today",
         newListItem: foundItems
       });
     }
