@@ -8,6 +8,9 @@
   },
   "author": "Mr.CRUD",
   "license": "ISC",
+  "engines": {
+    "node": "18.12.1"
+  },
   "dependencies": {
     "body-parse": "^0.1.0",
     "ejs": "^3.1.8",
